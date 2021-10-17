@@ -1,2 +1,2 @@
 # working-media-buttons-csharp
-![previev](https://raw.githubusercontent.com/maciekkoks/working-media-buttons-csharp/main/previev2.png)
+![previev](https://raw.githubusercontent.com/maciekkoks/multimedia-buttons/main/previev.png)
