@@ -1,7 +1,7 @@
 # Multimedia Buttons
 ![preview](https://raw.githubusercontent.com/maciekkoks/multimedia-buttons/main/preview.png)
 ```cs
-  public
+        public
         const int KEYEVENTF_EXTENTEDKEY = 1;
         public
         const int KEYEVENTF_KEYUP = 0;
