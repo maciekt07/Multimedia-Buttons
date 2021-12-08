@@ -1,5 +1,5 @@
 # Multimedia Buttons
-![preview](https://raw.githubusercontent.com/maciekkoks/multimedia-buttons/main/preview.png)
+![preview](https://raw.githubusercontent.com/maciekkoks/Multimedia-Buttons/main/app-preview.png)
 ```cs
 using System;
 using System.Collections.Generic;
