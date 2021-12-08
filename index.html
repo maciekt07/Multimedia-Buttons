@@ -1,1 +1,228 @@
-<h1>test</h1>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="author" content="github.com/maciekkoks">
+    <meta name="theme-color" content="#c8aeee">
+    <meta name="description" content="Random Color Author: github.com/maciekkoks">
+    <meta name="keywords" content="Random Color, maciekkoks">
+    <meta name="viewport" content="width=device-width, initial-scale=0.7">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="https://raw.githubusercontent.com/maciekkoks/Multimedia-Buttons/main/Multimedia%20Buttons/Resources/stop.png">
+    <title>Multimedia Buttons by maciekkoks</title>
+    <style>
+        body {
+            background-color: #474747;
+            margin: 0;
+            font-family: 'Lato', sans-serif;
+            font-family: 'Roboto', sans-serif;
+            font-family: 'Work Sans', sans-serif;
+            transition: 0.3s all;
+        }
+
+        header {
+            padding: 20px;
+            text-align: center;
+            font-size: 25px;
+            background: linear-gradient(90deg, rgba(200, 174, 238, 1) 0%, rgba(148, 163, 233, 1) 100%);
+            border-radius: 0 0 40px 40px;
+        }
+
+        button {
+            font-size: 25px;
+            color: black;
+            outline: none;
+            border: 2px solid white;
+            padding: 25px;
+            cursor: pointer;
+            border-radius: 25px;
+            background: linear-gradient(90deg, rgba(200, 174, 238, 1) 0%, rgba(148, 163, 233, 1) 100%);
+            transition-duration: 4s;
+            animation-delay: 5s;
+            transition: 1s;
+        }
+
+        button:hover {
+            background: linear-gradient(90deg, rgba(154, 194, 233, 1) 0%, rgba(136, 138, 215, 1) 100%);
+        }
+
+        article {
+            padding: 20px;
+            text-align: center;
+            background-color: white;
+            margin-left: 275px;
+            margin-right: 275px;
+            border-radius: 25px;
+        }
+
+        .preview {
+            box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 16px 50px 0 rgba(0, 0, 0, 0.19);
+        }
+
+        .ul1 {
+            font-size: 20px;
+            text-align: left;
+            margin-left: 50px;
+            vertical-align: top;
+            position: absolute;
+            top: 34em;
+        }
+
+        .ul2 {
+            font-size: 20px;
+            text-align: left;
+            right: 20em;
+            vertical-align: top;
+            position: absolute;
+            z-index: 100;
+            top: 41em;
+        }
+
+        footer {
+            text-align: center;
+            background: linear-gradient(90deg, rgba(200, 174, 238, 1) 0%, rgba(148, 163, 233, 1) 100%);
+            padding: 15px;
+            border-radius: 40px 40px 0 0;
+        }
+
+        pre {
+            text-align: left;
+            margin-left: 50px;
+            border: 2px solid black;
+            padding: 20px;
+            border-radius: 40px;
+            font-size: 14px;
+            background: linear-gradient(90deg, rgba(217, 228, 240, 1) 0%, rgba(192, 194, 233, 1) 100%);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Multimedia Buttons</h1>
+        <p>Work in progress!</p>
+        <p>By maciekkoks
+            <!-- <img height="64px" src="https://avatars.githubusercontent.com/u/85953204?v=4"> -->
+        </p>
+    </header><br>
+    <center>
+        <button onclick="window.open('https://github.com/maciekkoks/multimedia-buttons')">
+            View on GitHub
+        </button><br><br>
+        <button onclick="alert('soon');window.open('https://github.com/maciekkoks/multimedia-buttons'); ">
+            Download.zip
+        </button><br><br>
+    </center>
+    <article>
+        <h1>Multimedia buttons made in Visual Studio using C# and Windows Forms</h1><br>
+        <img class="preview" src="https://raw.githubusercontent.com/maciekkoks/multimedia-buttons/main/preview.png"><br><br><br>
+        <ul class="ul1">
+            <li>Stop All</li>
+            <li>Mute</li>
+            <li>Open Spotify.exe</li>
+            <li>Volume Down</li>
+            <li>Volume Up</li>
+        </ul>
+        <ul class="ul2">
+            <li>Previous Track</li>
+            <li>Play/Pause</li>
+            <li>Next Track</li>
+        </ul><br><br><br>
+        <img style="border-radius: 20px;" width="750px" class="preview" src="https://raw.githubusercontent.com/maciekkoks/Multimedia-Buttons/main/preview2.png"><br><br><br>
+        <h1>Main C# code</h1>
+        <pre>
+    <code>
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using System.Runtime.InteropServices;
+
+namespace Multimedia_Buttons
+{
+    public partial class Form1 : Form
+    {
+        // https://docs.microsoft.com/en-us/windows/win32/inputdev/virtual-key-codes
+
+        public
+        const int KEYEVENTF_EXTENTEDKEY = 1;
+        public
+        const int KEYEVENTF_KEYUP = 0;
+        public
+        const int VK_MEDIA_NEXT_TRACK = 0xB0;
+        public
+        const int VK_MEDIA_PLAY_PAUSE = 0xB3;
+        public
+        const int VK_MEDIA_PREV_TRACK = 0xB1;
+        public
+        const int VK_VOLUME_MUTE = 0xAD;
+        public
+        const int VK_MEDIA_STOP = 0xB2;
+        public
+        const int VK_VOLUME_UP = 0xAF;
+        public
+        const int VK_VOLUME_DOWN = 0xAE;
+
+        [DllImport("user32.dll")]
+        public static extern void keybd_event(byte virtualKey, byte scanCode, uint flags, IntPtr extraInfo);
+        public Form1()
+        {
+            InitializeComponent();
+            TopMost = true;
+        }
+
+        private void stop_Click(object sender, EventArgs e)
+        {
+            keybd_event(VK_MEDIA_STOP, 0, KEYEVENTF_EXTENTEDKEY, IntPtr.Zero);
+        }
+
+        private void mute_Click(object sender, EventArgs e)
+        {
+            keybd_event(VK_VOLUME_MUTE, 0, KEYEVENTF_EXTENTEDKEY, IntPtr.Zero);
+        }
+
+        private void spotify_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("Spotify.exe");
+        }
+
+        private void volume_down_Click(object sender, EventArgs e)
+        {
+            keybd_event(VK_VOLUME_DOWN, 0, KEYEVENTF_EXTENTEDKEY, IntPtr.Zero);
+        }
+
+        private void volume_up_Click(object sender, EventArgs e)
+        {
+            keybd_event(VK_VOLUME_UP, 0, KEYEVENTF_EXTENTEDKEY, IntPtr.Zero);
+        }
+
+        private void prev_track_Click(object sender, EventArgs e)
+        {
+            keybd_event(VK_MEDIA_PREV_TRACK, 0, KEYEVENTF_EXTENTEDKEY, IntPtr.Zero);
+        }
+
+        private void play_pause_Click(object sender, EventArgs e)
+        {
+            keybd_event(VK_MEDIA_PLAY_PAUSE, 0, KEYEVENTF_EXTENTEDKEY, IntPtr.Zero);
+        }
+
+        private void next_track_Click(object sender, EventArgs e)
+        {
+            keybd_event(VK_MEDIA_NEXT_TRACK, 0, KEYEVENTF_EXTENTEDKEY, IntPtr.Zero);
+        }
+    }
+}
+    </code>
+</pre>
+    </article><br><br><br>
+    <footer>
+        <p>Made with 💜 by <a target="_blank" href="https://github.com/maciekkoks/">Maciek</a></p>
+</body>
+
+</html>
