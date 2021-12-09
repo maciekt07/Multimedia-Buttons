@@ -45,21 +45,45 @@ namespace Multimedia_Buttons {
     const int VK_VOLUME_DOWN = 0xAE;
     [DllImport("user32.dll")]
     public static extern void keybd_event(byte virtualKey, byte scanCode, uint flags, IntPtr extraInfo);
-
     void Title() {
       var proc = Process.GetProcessesByName("Spotify").LastOrDefault(p => !string.IsNullOrWhiteSpace(p.MainWindowTitle));
       if (proc == null) {
-        this.Text = "Spotify is not running";
+        this.Text = "Multimedia Buttons By github.com/maciekkoks";
       }
       if (proc != null) {
-        this.Text = proc.MainWindowTitle;
+        if (proc.MainWindowTitle == "Advertisement") {
+          button1.Visible = true;
+        } else {
+          button1.Visible = false;
+        }
+        if (proc.MainWindowTitle == "Spotify Free") {
+          this.Text = "Multimedia Buttons By github.com/maciekkoks";
+        } else if (proc.MainWindowTitle == "Spotify Premium") {
+          this.Text = "Multimedia Buttons By github.com/maciekkoks";
+        } else {
+          this.Text = proc.MainWindowTitle;
+        }
+
       }
     }
 
+    void ad() {
+      var procad = Process.GetProcessesByName("Spotify").LastOrDefault(p => !string.IsNullOrWhiteSpace(p.MainWindowTitle));
+      if (procad.MainWindowTitle == "Advertisement") {
+        foreach(var process in Process.GetProcessesByName("Spotify")) {
+          process.Kill();
+        }
+        System.Diagnostics.Process.Start("Spotify.exe");
+        Thread.Sleep(2000);
+        keybd_event(VK_MEDIA_PLAY_PAUSE, 0, KEYEVENTF_EXTENTEDKEY, IntPtr.Zero);
+      }
+
+    }
     public Form1() {
       InitializeComponent();
       TopMost = true;
       Title();
+      button1.Visible = false;
     }
 
     private void stop_Click(object sender, EventArgs e) {
@@ -96,6 +120,22 @@ namespace Multimedia_Buttons {
 
     private void Form1_MouseMove(object sender, MouseEventArgs e) {
       Title();
+    }
+
+    private void Form1_Activated(object sender, EventArgs e) {
+      Title();
+    }
+
+    private void Form1_Deactivate(object sender, EventArgs e) {
+      Title();
+    }
+
+    private void Form1_MouseHover(object sender, EventArgs e) {
+      Title();
+    }
+
+    private void button1_Click(object sender, EventArgs e) {
+      ad();
     }
   }
 }
