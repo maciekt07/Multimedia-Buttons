@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="Multimedia-Buttons.exe" version="1.0.0.0" publicKeyToken="14e1f97e8b0595c3" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="Multimedia-Buttons" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="Multimedia-Buttons.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          Opcje manifestu kontroli konta użytkownika
+          Jeśli chcesz zmienić poziom kontroli konta użytkownika systemu Windows, zastąp węzeł 
+          requestedExecutionLevel jednym z następujących.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         Jeśli chcesz użyć wirtualizacji plików i rejestru do celów zgodności wstecznej, 
+         usuń węzeł requestedExecutionLevel.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Multimedia-Buttons.exe" size="35816">
+      <assemblyIdentity name="Multimedia-Buttons" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>PG8nFBghEn4MDk7IGcrllW6Af6bnR5JS51h8KC919pE=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="Multimedia-Buttons.exe.config" size="189">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>R+Wg8QGvQVHX8T0ta/qbhH1bXkqY0fRnS3wBV3J0bN8=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=DESKTOP-MOVEVDK\Maciek" issuerKeyHash="416e01cbc874ede05de340d435a14dc29e7cbf7c" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>FGVVtSo7TWVolAzAdFeTd2qEDwFUMAjX3P9+FO+5760=</DigestValue></Reference></SignedInfo><SignatureValue>YTpMzylLsHx7lQssjobhLK8DvCkkaN5Y5NPPSlGTayyNLf64v/psK3Ic1CYu4dtHRC8mnY3qN8egrJUiXM8I2jYU/kN4t741+Ai/GWe2batDxbTsGgmX6Xo8DDj8uLRk1Q6l43U6yn4EuAxMjpsf6vXXs+l7Wpwt2DQaS76QJjc=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>yvS5P2258ZCKMc0TBzp8hscMfpl1PHlob2JPiGFr3+QLiOTzUEKaDo2EXKb4tTOiVyHSZsXiHNUGAVjlK9Y328W0ZCrbkCIC0wXGQn2XFc15ZdiwU1vEKE5lVA6HmaG9qzwMpEe4a6kgC0/eBje6ZmdaAuAvQH+shzCcT1PfcVk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="adefb9ef147effdcd7083054010f846a77935774c00c9468654d3b2ab5556514" Description="" Url=""><as:assemblyIdentity name="Multimedia-Buttons.exe" version="1.0.0.0" publicKeyToken="14e1f97e8b0595c3" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DESKTOP-MOVEVDK\Maciek</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>aRVM3HNngJ2LI3SaxckI7KVRoLkJE7J5lhdkc145wMM=</DigestValue></Reference></SignedInfo><SignatureValue>vieWgK7GyktIEeqN3UYWZHmA/l4h5LZiYo+zIK1DfkfhrwI3jnt2gce7RKw014XqJTkn9L6N3Y6NdimJGR0hAeRko1krKSZK0AFnZCZSGfN69Djuizcc+BWbcYCn+L9F07uMGs8IzRf+fGgcKXhZGdyIi7HPQJjH+d7QBgsD0oE=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>yvS5P2258ZCKMc0TBzp8hscMfpl1PHlob2JPiGFr3+QLiOTzUEKaDo2EXKb4tTOiVyHSZsXiHNUGAVjlK9Y328W0ZCrbkCIC0wXGQn2XFc15ZdiwU1vEKE5lVA6HmaG9qzwMpEe4a6kgC0/eBje6ZmdaAuAvQH+shzCcT1PfcVk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB8TCCAVqgAwIBAgIQcWoysveFUa5NbGAY7YWRRzANBgkqhkiG9w0BAQsFADA3MTUwMwYDVQQDHiwARABFAFMASwBUAE8AUAAtAE0ATwBWAEUAVgBEAEsAXABNAGEAYwBpAGUAazAeFw0yMTEyMDkxNzQ4NTJaFw0yMjEyMDkyMzQ4NTJaMDcxNTAzBgNVBAMeLABEAEUAUwBLAFQATwBQAC0ATQBPAFYARQBWAEQASwBcAE0AYQBjAGkAZQBrMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDK9Lk/bbnxkIoxzRMHOnyGxwx+mXU8eWhvYk+IYWvf5AuI5PNQQpoOjYRcpvi1M6JXIdJmxeIc1QYBWOUr1jfbxbRkKtuQIgLTBcZCfZcVzXll2LBTW8QoTmVUDoeZob2rPAykR7hrqSALT94GN7pmZ1oC4C9Af6yHMJxPU99xWQIDAQABMA0GCSqGSIb3DQEBCwUAA4GBACow+8qU+FhkQZwsddldFCOkR9gIq3JeFipcH3yoBB+oOwyIH+IGXFityT9q3GYnauU28dJQQzsp27+XDfUhzC8RGj1hlko/YeFeOhqIomOnTXJHEaw5qWRVUEeFBAYf7kLpWdfwCMSl7G39tcyrMY0Xhg5iPIf8mRbkNEA13sdw</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
