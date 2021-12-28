@@ -1,7 +1,7 @@
 # Multimedia Buttons
 # [App Website](https://maciekkoks.github.io/Multimedia-Buttons-About/)
 ![preview](https://raw.githubusercontent.com/maciekkoks/Multimedia-Buttons/main/app-preview.png)
-![preview2](https://raw.githubusercontent.com/maciekkoks/Multimedia-Buttons/main/app-preview-skip-ad.png)
+![preview2](https://raw.githubusercontent.com/maciekkoks/Multimedia-Buttons/main/skipad.png)
 ![preview3](https://raw.githubusercontent.com/maciekkoks/Multimedia-Buttons/main/preview2.png)
 # Main Code
 
