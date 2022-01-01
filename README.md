@@ -2,7 +2,7 @@
 # [About Website](https://maciekkoks.github.io/Multimedia-Buttons/)
 ![preview](https://raw.githubusercontent.com/maciekkoks/Multimedia-Buttons/Website/Img/previewmain.png)
 ![preview2](https://raw.githubusercontent.com/maciekkoks/Multimedia-Buttons/Website/Img/skipad.png)
-![preview3](https://raw.githubusercontent.com/maciekkoks/Multimedia-Buttons/Website/Img/preview2.png)
+![preview3](https://raw.githubusercontent.com/maciekkoks/Multimedia-Buttons/Website/Img/mainimg.png)
 # Main Code
 
 ```cs
