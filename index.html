@@ -26,6 +26,7 @@
     <div id="root"></div>
 
     <script type="text/babel">
+      
 class App extends React.Component {
   render() {
     const App = "Multimedia Buttons";
@@ -100,18 +101,37 @@ class App extends React.Component {
             </a>
             .
           </p>
+          <p>
+            <a
+              class="d"
+              href="https://github.com/maciekkoks/Multimedia-Buttons"
+              target="_blank"
+            >
+              ➜ App Repository
+            </a>
+            <br />
+
+            <a
+              class="d"
+              href="https://github.com/maciekkoks/Multimedia-Buttons/tree/Website"
+              target="_blank"
+            >
+              ➜ Website Repository
+            </a>
+          </p>
           <img
-            class="previewone"
+            class="preview"
             src="https://raw.githubusercontent.com/maciekkoks/Multimedia-Buttons/Website/Img/previewmain.png"
           />
-          <br />
           <p>
             First version: September 2021
             <br />
             1.3.5 version: December 2021
           </p>
           <br />
-          <p class="h">🔊 Features</p>
+          <p class="h">
+            <span>🔊</span> Features
+          </p>
           <ul class="d">
             <li>
               {Features.map((Features) => (
@@ -133,12 +153,18 @@ class App extends React.Component {
               Spotify
             </a>
           </p>
-          <img src="https://raw.githubusercontent.com/maciekkoks/Multimedia-Buttons/Website/Img/skipad.png" />
+          <img
+            class="preview"
+            src="https://raw.githubusercontent.com/maciekkoks/Multimedia-Buttons/Website/Img/skipad.png"
+          />
+          <br />
+          <br />
           <p class="d">AdBlocker Code</p>
           <img
             id="ad"
             src="https://raw.githubusercontent.com/maciekkoks/Multimedia-Buttons/Website/Img/Adcode.png"
           />
+
           <p class="d">
             <a
               href="https://github.com/maciekkoks/Multimedia-Buttons/tree/main/Multimedia-Buttons"
@@ -170,23 +196,6 @@ class App extends React.Component {
             </a>{" "}
             - {Mail}
           </p>
-          <p>
-            <a
-              href="https://github.com/maciekkoks/Multimedia-Buttons"
-              target="_blank"
-            >
-              App Repository
-            </a>
-            <br />
-
-            <a
-              href="https://github.com/maciekkoks/Multimedia-Buttons/tree/Website"
-              target="_blank"
-            >
-              Website Repository
-            </a>
-          </p>
-          <br />
           <br />
           <button
             class="backtotop"
@@ -195,6 +204,7 @@ class App extends React.Component {
             Back To Top
           </button>
         </main>
+
         <footer>
           Made With 💜 By{" "}
           <a href={Github} target="_blank">
