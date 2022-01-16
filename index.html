@@ -26,7 +26,7 @@
     <div id="root"></div>
 
     <script type="text/babel">
-      
+
 class App extends React.Component {
   render() {
     const App = "Multimedia Buttons";
@@ -38,7 +38,7 @@ class App extends React.Component {
       "Now Playing Spotify Song In App Title",
       "Stop All",
       "Mute",
-      "Open Spotify.exe",
+      "Open Spotify.exe (Microsoft Store Version Only)",
       "Volume Down",
       "Volume Up",
       "Previous Track",
@@ -51,37 +51,37 @@ class App extends React.Component {
         <header>
           <h1 class="headertxt">{App}</h1>
           <p class="headerdes">
-            Multimedia control application with built-in{" "}
-            <a href="#adblocker">AdBlocker</a> for Spotify
+            Multimedia control application with built-in AdBlocker for Spotify
           </p>
-          <button
-            class="button1"
-            onClick={() =>
-              window.open(
-                "https://github.com/maciekkoks/multimedia-buttons",
-                "_blank"
-              )
-            }
-          >
-            View on github
-          </button>
-          <button
-            class="button1"
-            onClick={() =>
-              window.open("App/Multimedia Buttons V1.3.5.zip", "_self")
-            }
-          >
-            Download.zip
-          </button>
-          <br />
+          <div class="buttons">
+            <button
+              class="button1"
+              onClick={() =>
+                window.open(
+                  "https://github.com/maciekkoks/multimedia-buttons",
+                  "_blank"
+                )
+              }
+            >
+              View on github
+            </button>
+            <button
+              class="button1"
+              onClick={() =>
+                window.open("App/Multimedia Buttons V1.3.5.zip", "_self")
+              }
+            >
+              Download.zip
+            </button>
+          </div>
           <br />
         </header>
         <main>
-          <p class="headertwo">{App}</p>
           <img
             class="mainimg"
             src="https://raw.githubusercontent.com/maciekkoks/Multimedia-Buttons/Website/Img/mainimg.png"
           />
+
           <p class="h">⏯ About</p>
           <p class="d">
             <b>{App}</b> [V1.3.5] made in Visual Studio using{" "}
@@ -144,7 +144,7 @@ class App extends React.Component {
             📛 AdBlocker
           </p>
           <p class="d">
-            Working Adblocker for{" "}
+            AdBlocker for{" "}
             <a
               href="https://open.spotify.com/playlist/5wTHxmdjOtkOx3hfBGBdIN?si=d30b7735369746b3"
               target="_blank"
@@ -152,6 +152,7 @@ class App extends React.Component {
             >
               Spotify
             </a>
+            &nbsp;only works for Microsoft Store version
           </p>
           <img
             class="preview"
@@ -199,7 +200,7 @@ class App extends React.Component {
           <br />
           <button
             class="backtotop"
-            onClick={() => window.open("#top", "_self")}
+            onClick={() => window.open("#root", "_self")}
           >
             Back To Top
           </button>
@@ -210,6 +211,7 @@ class App extends React.Component {
           <a href={Github} target="_blank">
             {Author}
           </a>
+          <br />
         </footer>
       </div>
     );
@@ -217,6 +219,7 @@ class App extends React.Component {
 }
 
 ReactDOM.render(<App />, document.getElementById("root"));
+
 
     </script>
 
