@@ -58,10 +58,6 @@ header {
     border-radius: 0 0 50px 50px;
 }
 
-img {
-    box-shadow: var(--shadow);
-}
-
 .mainimg {
     border-radius: 20px;
     box-shadow: var(--shadow);
