@@ -9,7 +9,7 @@
     <meta name="theme-color" content="#a6c5f1">
     <meta name="description" content="Multimedia Buttons Author: github.com/maciekkoks">
     <meta name="keywords" content="Multimedia Buttons, maciekkoks">
-    <meta name="viewport" content="width=device-width, initial-scale=0.4">
+    <meta name="viewport" content="width=device-width, initial-scale=0.5">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="icon" href="https://raw.githubusercontent.com/maciekkoks/Multimedia-Buttons/main/Multimedia-Buttons/Resources/stop.png">
@@ -46,6 +46,18 @@ class App extends React.Component {
       "Next Track",
       "Skip ads button for Spotify (plz dont sue me)",
     ];
+
+    function emoji_change() {
+      const emoji = document.getElementById("emoji");
+      if (emoji.innerText === "🔊") {
+        emoji.innerText = "🔉";
+      } else if (emoji.innerText === "🔉") {
+        emoji.innerText = "🔈";
+      } else {
+        emoji.innerText = "🔊";
+      }
+    }
+
     return (
       <div id="top">
         <header>
@@ -130,7 +142,10 @@ class App extends React.Component {
           </p>
           <br />
           <p class="h">
-            <span>🔊</span> Features
+            <span id="emoji" onClick={() => emoji_change()}>
+              🔊
+            </span>{" "}
+            Features
           </p>
           <ul class="d">
             <li>
