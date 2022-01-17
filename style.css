@@ -68,9 +68,17 @@ header {
     font-size: 40px;
     color: var(--blue);
 }
-
+#emoji {
+    cursor: pointer;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
 .headertxt {
-    font-size: 45px;
+    font-size: 50px;
 }
 
 .headerdes {
@@ -83,6 +91,7 @@ header {
 
 .preview:hover {
     box-shadow: var(--purple-shadow);
+    transform: translateY(-6px);
 }
 
 .h {
@@ -120,6 +129,7 @@ ul:hover {
     border: 2px solid var(--prpl);
     color: var(--prpl);
     box-shadow: var(--shadow);
+    transform: translateY(-4px);
 }
 
 footer {
@@ -148,6 +158,7 @@ footer {
     border: 2px solid var(--prpl);
     box-shadow: var(--purple-shadow);
     border-radius: 18px;
+    transform: translateY(-4px);
 }
 
 #ad {
