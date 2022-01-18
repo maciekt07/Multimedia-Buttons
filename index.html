@@ -15,9 +15,11 @@
     <link rel="icon" href="https://raw.githubusercontent.com/maciekkoks/Multimedia-Buttons/main/Multimedia-Buttons/Resources/stop.png">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="style.scss">
+    <script src="https://kit.fontawesome.com/ddfd86b9d0.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
     <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="maciekt07" data-description="Support me on Buy me a coffee!" data-message="" data-color="#BD5FFF" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
 
 </head>
 
@@ -89,14 +91,18 @@ class App extends React.Component {
           <br />
         </header>
         <main>
-          <img
-            class="mainimg"
-            src="https://raw.githubusercontent.com/maciekkoks/Multimedia-Buttons/Website/Img/mainimg.png"
-          />
-
+          <div class="imgbaner">
+            <a
+              href="https://marketplace.visualstudio.com/items?itemName=maciekkoks.luvia-theme"
+              target="_blank"
+              title="Theme: Luvia Theme"
+            >
+              <img class="mainimg" src="https://raw.githubusercontent.com/maciekkoks/Multimedia-Buttons/Website/Img/luvia%20theme%20baner.png" />
+            </a>
+          </div>
           <p class="h">⏯ About</p>
           <p class="d">
-            <b>{App}</b> [V1.3.5] made in Visual Studio using{" "}
+            <b>{App}</b> V1.3.5 made in Visual Studio using{" "}
             <a
               href="https://github.com/maciekkoks?tab=repositories&q=&type=&language=c%23&sort="
               target="_blank"
@@ -147,13 +153,15 @@ class App extends React.Component {
             </span>{" "}
             Features
           </p>
-          <ul class="d">
-            <li>
-              {Features.map((Features) => (
-                <li class="d">{Features}</li>
-              ))}
-            </li>
-          </ul>
+          <div class="features">
+            <ul class="d">
+              <li>
+                {Features.map((Features) => (
+                  <li class="d">{Features}</li>
+                ))}
+              </li>
+            </ul>
+          </div>
           <br />
           <p id="adblocker" class="h">
             📛 AdBlocker
@@ -176,11 +184,15 @@ class App extends React.Component {
           <br />
           <br />
           <p class="d">AdBlocker Code</p>
-          <img
-            id="ad"
-            src="https://raw.githubusercontent.com/maciekkoks/Multimedia-Buttons/Website/Img/Adcode.png"
-          />
-
+          <a
+            href="https://github.com/maciekkoks/Multimedia-Buttons/blob/main/Multimedia-Buttons/Form1.cs"
+            target="_blank"
+          >
+            <img
+              id="ad"
+              src="https://raw.githubusercontent.com/maciekkoks/Multimedia-Buttons/Website/Img/adblockcode.png"
+            />
+          </a>
           <p class="d">
             <a
               href="https://github.com/maciekkoks/Multimedia-Buttons/tree/main/Multimedia-Buttons"
@@ -227,6 +239,10 @@ class App extends React.Component {
             {Author}
           </a>
           <br />
+          <div class="socials">
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-github"></i>
+          </div>
         </footer>
       </div>
     );
@@ -235,9 +251,8 @@ class App extends React.Component {
 
 ReactDOM.render(<App />, document.getElementById("root"));
 
-
     </script>
-<script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="maciekt07" data-description="Support me on Buy me a coffee!" data-message="" data-color="#BD5FFF" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
+    
 </body>
 
 </html>
