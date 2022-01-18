@@ -26,10 +26,11 @@ body {
 }
 
 main {
-    border-radius: 20px;
     padding: 75px;
     margin-left: 300px;
     margin-right: 300px;
+    margin-bottom: -20px;
+    margin-top: -20px;
 }
 
 a,
@@ -58,9 +59,23 @@ header {
     border-radius: 0 0 50px 50px;
 }
 
+.socials {
+    justify-content: center;
+    margin: auto;
+    display: flex;
+    padding: 0px;
+    display: none;
+}
+
+.imgbaner {
+    text-align: center;
+}
+
 .mainimg {
+    width: auto;
     border-radius: 20px;
     box-shadow: var(--shadow);
+    cursor: pointer;
 }
 
 .headertwo {
@@ -68,6 +83,7 @@ header {
     font-size: 40px;
     color: var(--blue);
 }
+
 #emoji {
     cursor: pointer;
     -webkit-touch-callout: none;
@@ -77,6 +93,7 @@ header {
     -ms-user-select: none;
     user-select: none;
 }
+
 .headertxt {
     font-size: 50px;
 }
@@ -103,14 +120,10 @@ header {
     font-size: 21px;
 }
 
-ul {
+.features {
     border-radius: 25px;
     border: 3px solid var(--prpl);
-    padding: 50px;
-}
-
-ul:hover {
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    padding: 30px;
 }
 
 .button1 {
@@ -151,6 +164,7 @@ footer {
     margin: 0 auto;
     display: block;
     bottom: 250px;
+    background: transparent;
 }
 
 .backtotop:hover {
@@ -162,9 +176,13 @@ footer {
 }
 
 #ad {
-    width: 1000px;
-    border-radius: 15px;
-    border: 2px solid var(--prpl);
+    width: 900px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#ad:hover {
+    box-shadow: var(--shadow);
 }
 
 @media(max-width: 1550px) {
