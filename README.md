@@ -1,5 +1,5 @@
 # Multimedia Buttons
-# [About Website](https://maciekkoks.github.io/Multimedia-Buttons/)
+# [About Website](https://maciekt07.github.io/Multimedia-Buttons/)
 ![preview](https://raw.githubusercontent.com/maciekkoks/Multimedia-Buttons/Website/Img/previewmain.png)
 ![preview2](https://raw.githubusercontent.com/maciekkoks/Multimedia-Buttons/Website/Img/skipad.png)
 ![preview3](https://raw.githubusercontent.com/maciekkoks/Multimedia-Buttons/Website/Img/mainimg.png)
