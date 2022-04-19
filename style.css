@@ -135,11 +135,11 @@ header {
     border-radius: 20px;
     margin-left: 10px;
     margin-right: 10px;
-    border: 2px solid;
+    border: 2.5px solid black;
 }
 
 .button1:hover {
-    border: 2px solid var(--prpl);
+    border: 2.5px solid var(--prpl);
     color: var(--prpl);
     box-shadow: var(--shadow);
     transform: translateY(-4px);
@@ -176,13 +176,9 @@ footer {
 }
 
 #ad {
-    width: 900px;
-    border-radius: 10px;
+    width: 1100px;
+    border-radius: 35px;
     cursor: pointer;
-}
-
-#ad:hover {
-    box-shadow: var(--shadow);
 }
 
 @media(max-width: 1550px) {
