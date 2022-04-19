@@ -15,6 +15,7 @@
     <link rel="icon" href="https://raw.githubusercontent.com/maciekkoks/Multimedia-Buttons/main/Multimedia-Buttons/Resources/stop.png">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="style.scss">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://kit.fontawesome.com/ddfd86b9d0.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
     <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
@@ -63,8 +64,8 @@ class App extends React.Component {
     return (
       <div id="top">
         <header>
-          <h1 class="headertxt">{App}</h1>
-          <p class="headerdes">
+          <h1 class="headertxt animate__animated animate__headShake" >{App}</h1>
+          <p class="headerdes animate__animated animate__fadeIn">
             Multimedia control application with built-in AdBlocker for Spotify
           </p>
           <div class="buttons">
@@ -91,7 +92,7 @@ class App extends React.Component {
           <br />
         </header>
         <main>
-          <div class="imgbaner">
+          <div class="imgbaner animate__animated animate__fadeInRight">
             <a
               href="https://marketplace.visualstudio.com/items?itemName=maciekkoks.luvia-theme"
               target="_blank"
@@ -100,17 +101,18 @@ class App extends React.Component {
               <img class="mainimg" src="https://raw.githubusercontent.com/maciekkoks/Multimedia-Buttons/Website/Img/luvia%20theme%20baner.png" />
             </a>
           </div>
+          <div class="animate__animated animate__fadeInLeft">
           <p class="h">⏯ About</p>
           <p class="d">
-            <b>{App}</b> V1.3.5 made in Visual Studio using{" "}
+            <b>{App}</b> V1.3.5  Multimedia control app with built-in{" "}
+            <a href="#adblocker">AdBlocker</a> for Spotify. Made in Visual Studio using{" "}
             <a
               href="https://github.com/maciekkoks?tab=repositories&q=&type=&language=c%23&sort="
               target="_blank"
             >
               C#
             </a>{" "}
-            And Windows Forms. It is a Multimedia control app with built-in{" "}
-            <a href="#adblocker">AdBlocker</a> for Spotify. Application uses{" "}
+            And Windows Forms. Application uses{" "}
             <a
               href="https://docs.microsoft.com/en-us/windows/win32/inputdev/virtual-key-codes"
               target="_blank"
@@ -119,6 +121,7 @@ class App extends React.Component {
             </a>
             .
           </p>
+        
           <p>
             <a
               class="d"
@@ -137,6 +140,7 @@ class App extends React.Component {
               ➜ Website Repository
             </a>
           </p>
+        </div>
           <img
             class="preview"
             src="https://raw.githubusercontent.com/maciekkoks/Multimedia-Buttons/Website/Img/previewmain.png"
@@ -185,12 +189,12 @@ class App extends React.Component {
           <br />
           <p class="d">AdBlocker Code</p>
           <a
-            href="https://github.com/maciekkoks/Multimedia-Buttons/blob/main/Multimedia-Buttons/Form1.cs"
+            href="https://marketplace.visualstudio.com/items?itemName=maciekkoks.luvia-theme"
             target="_blank"
           >
             <img
               id="ad"
-              src="https://raw.githubusercontent.com/maciekkoks/Multimedia-Buttons/Website/Img/adblockcode.png"
+              src="d.png" title="Theme: Luvia Theme"
             />
           </a>
           <p class="d">
@@ -242,6 +246,7 @@ class App extends React.Component {
           <div class="socials">
             <i class="fab fa-twitter"></i>
             <i class="fab fa-github"></i>
+            <i class="fab fa-spotify"></i>
           </div>
         </footer>
       </div>
